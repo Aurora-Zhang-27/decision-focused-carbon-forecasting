@@ -1,0 +1,23 @@
+[
+  {
+    "region": "ERCOT",
+    "mean_regret_pred": 157.87479512175622,
+    "mean_regret_uniform": 15245.228210538451,
+    "mean_ratio_pred": 1.0008585163339363,
+    "mean_ratio_uniform": 1.1630295979980596
+  },
+  {
+    "region": "NYISO",
+    "mean_regret_pred": 614.6645297223364,
+    "mean_regret_uniform": 3013.4061211926196,
+    "mean_ratio_pred": 1.0056043185065155,
+    "mean_ratio_uniform": 1.0880303384099224
+  },
+  {
+    "region": "PJM",
+    "mean_regret_pred": 390.03921731870776,
+    "mean_regret_uniform": 3032.401603029485,
+    "mean_ratio_pred": 1.0471236597945193,
+    "mean_ratio_uniform": 1.0715130446079728
+  }
+]

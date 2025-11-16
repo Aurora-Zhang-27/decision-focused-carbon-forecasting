@@ -1,0 +1,27 @@
+# —— Core ML / Deep Learning ——
+torch>=2.1.0
+pytorch-lightning>=2.2.0
+pytorch-forecasting>=1.0.0
+
+# —— Data processing ——
+pandas>=2.0.0
+numpy>=1.23.0
+pyarrow>=12.0.0
+scikit-learn>=1.2.0
+
+# —— Visualization ——
+matplotlib>=3.7.0
+
+# —— Time & holiday features ——
+pandas_ta
+holidays>=0.30
+
+# —— File formats ——
+pyyaml
+python-dateutil
+
+# —— Optional: tqdm logging ——
+tqdm
+
+# —— For scripts (parquet, json etc.) ——
+fastparquet

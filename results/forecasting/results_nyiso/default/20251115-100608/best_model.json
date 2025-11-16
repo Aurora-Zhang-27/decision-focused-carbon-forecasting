@@ -1,0 +1,11 @@
+{
+  "best_ckpt": "/Users/aurorazhang/Desktop/decision_focused_carbon_full/results_nyiso/default/20251115-100608/checkpoints/tft-09-24.69.ckpt",
+  "overall": {
+    "MAE": 342.48980712890625,
+    "MSE": 653109.1875,
+    "WAPE": 0.047450393716789524,
+    "sMAPE": 0.042893633246421814,
+    "MAPE(|y|>=50)": 0.16533461213111877,
+    "MdAPE(|y|>=50)": 0.011994296684861183
+  }
+}

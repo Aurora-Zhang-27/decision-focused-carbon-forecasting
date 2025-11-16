@@ -1,0 +1,65 @@
+{
+  "dataset": {
+    "datetime_col": "UTC time",
+    "target_col": "carbon_intensity",
+    "group_col": "region",
+    "region_default": "PJM",
+    "freq": "h",
+    "max_encoder_length": 96,
+    "max_prediction_length": 12,
+    "known_reals": [
+      "forecast_avg_wind_speed_wMean_f",
+      "forecast_avg_temperature_wMean_f",
+      "forecast_avg_dewpoint_wMean_f",
+      "forecast_avg_dswrf_wMean_f",
+      "forecast_avg_precipitation_wMean_f",
+      "forecast_avg_wind_speed_wMean_w",
+      "forecast_avg_temperature_wMean_w",
+      "forecast_avg_dewpoint_wMean_w",
+      "forecast_avg_dswrf_wMean_w",
+      "forecast_avg_precipitation_wMean_w",
+      "avg_coal_production_forecast",
+      "avg_hydro_production_forecast",
+      "avg_nat_gas_production_forecast",
+      "avg_nuclear_production_forecast",
+      "avg_oil_production_forecast",
+      "avg_other_production_forecast",
+      "avg_solar_production_forecast",
+      "avg_wind_production_forecast"
+    ],
+    "unknown_reals": [
+      "carbon_intensity"
+    ]
+  },
+  "paths": {
+    "forecast_csv": "/Users/aurorazhang/Desktop/CAISO2/CarbonCast/data/PJM/PJM_96hr_forecasts_DA.csv",
+    "emission_csv": "/Users/aurorazhang/Desktop/CAISO2/CarbonCast/data/PJM/PJM_direct_emissions.csv",
+    "weather_csv": "/Users/aurorazhang/Desktop/CAISO2/CarbonCast/data/PJM/PJM_weather_forecast.csv"
+  },
+  "model": {
+    "hidden_size": 96,
+    "attention_head_size": 4,
+    "dropout": 0.2,
+    "hidden_continuous_size": 32
+  },
+  "training": {
+    "learning_rate": 0.0003,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "trainer": {
+    "batch_size": 256,
+    "max_epochs": 45,
+    "fast_mode": true
+  },
+  "output": {
+    "save_dir": "results_pjm"
+  },
+  "decision": {
+    "use_decision_loss": true,
+    "lambda_decision": 0.5
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "best_ckpt": "/Users/aurorazhang/Desktop/decision_focused_carbon_full/results_pjm/default/20251115-095242/checkpoints/tft-04-27.47.ckpt",
+  "overall": {
+    "MAE": 157.9552764892578,
+    "MSE": 526739.375,
+    "WAPE": 0.014751457593160714,
+    "sMAPE": 0.01829022914171219,
+    "MAPE(|y|>=50)": 0.15778818726539612,
+    "MdAPE(|y|>=50)": 0.008889278396964073
+  }
+}

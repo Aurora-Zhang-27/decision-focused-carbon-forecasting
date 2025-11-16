@@ -1,0 +1,5 @@
+{
+  "train_samples": 15018,
+  "val_samples": 2736,
+  "target": "carbon_intensity"
+}
