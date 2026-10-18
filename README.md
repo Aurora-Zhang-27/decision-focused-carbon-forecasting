@@ -1,5 +1,10 @@
 # Decision-Focused Carbon Forecasting
 
+> **Note:** This repository is an earlier research prototype (TFT-based, direct
+> carbon-intensity forecasting). It is kept for reproducibility; my current work
+> on this topic uses structured fuel-mix surrogate models.
+
+
 This repository contains a research prototype for carbon-intensity forecasting and decision-focused evaluation across three U.S. grid regions: **ERCOT**, **NYISO**, and **PJM**.
 
 The project trains Temporal Fusion Transformer models for multi-hour carbon-intensity forecasting, exports rolling forecast windows, and evaluates how forecast quality affects a downstream carbon-aware scheduling task. The goal is to connect forecasting performance with operational decision quality, rather than evaluating forecasts only through scalar error metrics.
@@ -18,6 +23,13 @@ For these applications, a forecast is useful only if it supports a better decisi
 - Decision-focused evaluation with a carbon-aware scheduling simulation
 - Regret-style comparison against simple scheduling baselines
 - Reproducible scripts for training, forecast export, decision evaluation, and plotting
+
+## Results
+
+Decision-focused evaluation: scheduling regret of forecast-driven schedules vs.
+simple baselines (lower is better).
+
+![Scheduling regret comparison](results/figures/regret_comparison.png)
 
 ## Repository Structure
 
@@ -57,7 +69,7 @@ results/
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r code/requirements.txt
 ```
 
 ## Data Setup
